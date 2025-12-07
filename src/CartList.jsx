@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom"
 export default function CartList(){
 
     const cartSelector = useSelector((state)=> state.cart.items)
-    console.log(cartSelector)
+    
     const [cartItems,setCartItems]=useState(cartSelector)
     
     useEffect(()=>{
